@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+   html {
+      --color-primary: #ed3654;
+      --color-primary-light: #ff6f80;
+      --color-primary-dark: #b4002c;
+
+      --color-secondary: #5834d8;
+      --color-secondary-light: #9162ff;
+      --color-secondary-dark: #000075;
+
+      --color-text-black: #111827;
+      --color-text-grey: #63687b;
+      --color-text-light-grey: #aaaabf;
+      --color-text-dark-grey: #383e4f;
+   }
+
+/* ==========================================================================
+   Master Layout
+   ========================================================================== */
+   main {
+      max-width: 35rem;
+   }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+   html {
+      --font-primary: 'Open Sans', Arial, sans-serif;
+      --font-headings: 'Montserrat', Arial, sans-serif;
+   }
+
+   html {
+      font-family: var( --font-primary );
+      line-height: 1.4;
+   }
+
+   h1, h2, h3, h4 {
+      font-family: var( --font-headings );
+   }
+
+   a {
+   	color: var( --color-secondary );
+      text-decoration: none;
+   }
+   a:hover {
+      color: var( --color-text-light-grey);
+      text-decoration: underline;
+   }
+
+   /* ==========================================================================
+   Header Component
+   ========================================================================== */
+
+   header {
+   	background-color: var( --color-primary );
+   	padding: 2rem;
+   }
+
+   /* ==========================================================================
+   Footer Component
+   ========================================================================== */
+
+   footer {
+   	background-color: var( --color-primary-light );
+   	padding: 2rem;
+   }
