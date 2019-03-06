@@ -10,7 +10,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans" rel="stylesheet">
 
 </head>
 <body>
@@ -34,6 +34,97 @@
 		
 		<h1>Craft Components</h1>
 
+		<h2>Button Links</h2>
+
+		<h3>Hero Button</h3>
+
+		<figure>
+
+			<a class="button-primary" href="#">button</a>
+
+		</figure>
+
+		<h3>Normal Buttons</h3>
+		
+		<figure>		
+
+			<a class="button-normal" href="#">button</a>
+
+		</figure>
+
+		<h3>Tertiary Buttons</h3>
+
+		<figure>
+
+			<a class="button-tertiary" href="#">button</a>
+
+		</figure>
+
+		<h2>Accordions</h2>
+
+		<figure>
+			
+			<details>
+
+				<summary>
+					Decide where your cloud lives.
+				</summary>
+				
+				<div>
+				
+					<p>Maybe he lives right in here. Let all these little things happen. Don't fight them. Learn to use them.</p>
+				
+				</div>
+					
+			</details>
+
+			<details>
+				<summary>
+					There are no mistakes.
+				</summary>
+				
+				<div>
+				
+					<p>Just happy little accidents.</p>
+				
+					<p>There is no right or wrong - as long as it makes you happy and doesn't hurt anyone. </p>
+				
+				</div>
+					
+			</details>
+
+			<details>
+				<summary>
+					Anyone can paint.
+				</summary>
+				
+				<div>
+				
+					<p>Didn't you know you had that much power? You can move mountains. You can do anything. </p>
+				
+				</div>
+					
+			</details>
+
+		</figure>
+
+		<h2>Modal Dialogue</h2>
+
+		<figure>
+			
+			<dialog id=modal-demo>
+
+				<h5>This is a modal.</h5>
+	 
+				<p>The best modal ever to exist.</p>
+
+				<a class="button-primary" href="#">button</a>
+			</dialog>
+
+			<button id="open-modal" type="button">Open Dialog</button>
+
+		</figure>
+
 	</main>
 
 	<footer>
@@ -53,6 +144,25 @@
 		 </nav>
 
 	</footer>
-	
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+
+		const modal = document.querySelector('dialog');
+		const open = document.getElementById('open-modal');
+
+		open.addEventListener('click', () => {
+		modal.showModal();
+		});
+
+		modal.addEventListener('click', event => {
+		if (event.target === modal) {
+		modal.close('cancelled');
+		}
+		});
+
+		});
+	</script>
+
 </body>
 </html>
