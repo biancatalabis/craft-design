@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Craft Design System | Components</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:600|Barlow:400,600" rel="stylesheet">
+
+</head>
+<body>
+
+	<header>
+
+		<div class="logo"><p>Craft</p></div>
+
+		<nav class="nav-primary-dark">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="style.html">Style</a></li>
+				<li><a href="components.html" class="current-dark">Components</a></li>
+				<li><a href="layouts.html">Layouts</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main>
+		
+		<h1 class="main-heading">Craft Components</h1>
+
+		<p class="featured-text-light">Buttons, accordions, modals, forms, navigation, notifications & cards</p>
+
+		<h2>Button Links</h2>
+
+		<p>Buttons are important tools in showing a user's choice of options, therefore a button hierarchy exists. Buttons are all the same size, but hieracrhy is displayed through color choice and fill.</p>
+
+		<p>Primary Buttons are solid filled and should be used on hero components, landing pages, and as call to action buttons.</p>
+
+		<p>Normal buttons are solid silver only and should be used on products pages.</p>
+
+		<p>Tertiary buttons are transparent and black or white only. They should be used on actions that lower in importance than the primary call to action.</p>
+
+		<h3>Primary Buttons</h3>
+
+		<figure>
+
+			<a class="button button-primary button-gold-darker" href="#">Sign Up</a>
+
+			<a class="button button-primary button-gold" href="#">Sign Up</a>
+
+			<a class="button button-primary button-black" href="#">Find Out More</a>
+
+			<a class="button button-primary button-silver" href="#">Find Out More</a>
+
+		</figure>
+
+		<h3>Normal Buttons</h3>
+		
+		<figure>		
+
+			<a class="button button-normal-light" href="#">Button Text</a>
+
+		</figure>
+
+		<figure class="figure-dark">
+
+			<a class="button button-normal-dark" href="#">Button Text</a>
+
+		</figure>
+
+		<h3>Tertiary Buttons</h3>
+
+		<figure>
+
+			<a class="button button-tertiary button-black2gold" href="#">Button Text</a>
+
+		</figure>
+
+		<figure class="figure-dark">
+
+			<a class="button button-tertiary button-white2gold" href="#">Button Text</a>
+
+		</figure>
+
+		<h2>Accordions</h2>
+
+		<figure>
+			
+			<details class="details-light">
+
+				<summary>
+					How many tools can I rent?
+				</summary>
+				
+				<div>
+				
+					<p>You can rent as many tools as you like, but remember to send them back by the due date.</p>
+				
+				</div>
+					
+			</details>
+
+			<details class="details-light">
+
+				<summary>
+					How do I start building?
+				</summary>
+				
+				<div>
+				
+					<p>Order some tools and build?</p>
+				
+					<p>But really, check out the Toolshed blog for project inspiration. We're sure you'll find something you want to make.</p>
+				
+				</div>
+					
+			</details>
+
+			<details class="details-light">
+				
+				<summary>
+					How manly am I going to feel while building?
+				</summary>
+				
+				<div>
+				
+					<p>Real f*cking manly. So get to ordering your tools and doing some DIY, repairs or crafts.</p>
+				
+				</div>
+					
+			</details>
+
+		</figure>
+
+		<figure class="figure-dark">
+			
+			<details class="details-dark">
+
+				<summary>
+					How many tools can I rent?
+				</summary>
+				
+				<div>
+				
+					<p>You can rent as many tools as you like, but remember to send them back by the due date.</p>
+				
+				</div>
+					
+			</details>
+
+			<details class="details-dark">
+
+				<summary>
+					How do I start building?
+				</summary>
+				
+				<div>
+				
+					<p>Order some tools and build?</p>
+				
+					<p>But really, check out the Toolshed blog for project inspiration. We're sure you'll find something you want to make.</p>
+				
+				</div>
+					
+			</details>
+
+			<details class="details-dark">
+				
+				<summary>
+					How manly am I going to feel while building?
+				</summary>
+				
+				<div>
+				
+					<p>Real f*cking manly. So get to ordering your tools and doing some DIY, repairs or crafts.</p>
+				
+				</div>
+					
+			</details>
+
+		</figure>
+
+		<h2>Modal Dialogue</h2>
+
+		<figure>
+			
+			<dialog id=modal-demo>
+
+				<div class="modal-content">
+
+					<h3>Hey there, so sorry to interrupt.</h3>
+		 
+					<p>It looks like we've seen you here before. Why not make it official? Sign up to get exlusive offers, plus a 10% discount on your next order.</p>
+
+					<a class="button button-primary button-gold" href="#">Sign Up</a>
+
+					<p><a class="link-dark" href="#">Nah, bruh, I'm good</a></p>
+
+				</div>
+
+			</dialog>
+
+			<button id="open-modal" type="button">Open Dialog</button>
+
+		</figure>
+
+		<h2>Form Inputs</h2>
+
+		<h3>Text</h3>
+
+		<figure>
+			
+			<form action="">
+
+				<div class="input-container">
+					<label for="example-text">Standard</label>
+					<input type="text" id="name" name="example-text" placeholder="Example Text">
+					<p class="help-text">This is some hint text, microcopy, etc.</p>
+				</div>
+
+				<div class="input-container">
+					<label for="example-text">Error</label>
+					<input type="text" id="name" name="example-text" placeholder="Example Text" class="input-error">
+					<p class="error-text">Oh, awkward, something went wrong. Our bad.</p>
+				</div>
+
+				<div class="input-container">
+					<label for="example-text">Disabled</label>
+					<input type="text" id="name" name="example-text" placeholder="Example Text" disabled>
+				</div>
+
+			</form>
+
+		</figure>
+
+		<h3>Text Area</h3>
+
+		<figure>
+
+			<form action="">
+
+				<div class="input-container">
+					<label for="example-text-area">Standard Text Area</label>
+					<textarea id="example-text-area" name="example-text-area" placeholder="Let us know your thoughts."></textarea>
+				</div>
+
+				<div class="input-container">
+					<label for="example-text-area">Error Text Area</label>
+					<textarea id="example-text-area" name="example-text-area" placeholder="Let us know your thoughts." class="input-error"></textarea>
+					<p class="error-text">Oh, awkward, something went wrong. Our bad.</p>
+				</div>
+
+				<div class="input-container">
+					<label for="example-text-area">Disabled Text Area</label>
+					<textarea id="example-text-area" name="example-text-area" placeholder="Let us know your thoughts." disabled></textarea>
+				</div>
+
+			</form>
+
+		</figure>
+
+		<h3>Select</h3>
+
+		<figure>
+
+			<form action="">
+
+				<div class="input-container">
+
+					<label for="example-select">Standard Select</label>
+					<select id="example-select" name="example-select">
+						<option selected disabled hidden value="">Choose</option>
+						<option>Hammer</option>
+						<option>Tape Measure</option>
+						<option>Utility Knife</option>
+					</select>
+
+				</div>
+
+				<div class="input-container">
+
+					<label for="example-select">Error Select</label>
+					<select id="example-select" name="example-select" class="input-error">
+						<option selected disabled hidden value="">Choose</option>
+						<option>Hammer</option>
+						<option>Tape Measure</option>
+						<option>Utility Knife</option>
+					</select>
+					<p class="error-text">You gotta choose something from the list.</p>
+
+				</div>
+
+				<div class="input-container">
+
+					<label for="example-select">Disabled Select Disabled</label>
+					<select id="example-select" name="example-select" disabled>
+						<option selected disabled hidden value="">Choose</option>
+						<option>Hammer</option>
+						<option>Tape Measure</option>
+						<option>Utility Knife</option>
+					</select>
+
+				</div>
+
+			</form>
+
+		</figure>
+
+		<h3>Submit</h3>
+
+		<figure>
+
+			<form action="">
+			
+				<div class="input-container">
+
+					<input type="submit" value="Submit" class="button-submit">
+
+				</div>
+
+			</form>
+
+		</figure>
+
+		<h3>Search</h3>
+
+		<figure>
+			
+			<form action="">
+				
+				<input type="search" id="name" name="search" placeholder="Looking for something?" class="search-form-light">
+
+			</form>
+
+		</figure>
+
+		<figure class="figure-dark">
+			
+			<form action="">
+				
+				<input type="search" id="name" name="search" placeholder="Looking for something?" class="search-form-dark">
+
+			</form>
+
+		</figure>
+
+		<h2>Navigation</h2>
+
+		<h3>Primary</h3>
+
+		<figure>
+			
+			<nav class="nav-primary-light">
+				<ul>
+					<li><a href="">Item 1</a></li>
+					<li><a href="" class="current-light">Item 2</a></li>
+					<li><a href="">Item 3</a></li>
+					<li><a href="">Item 5</a></li>
+				</ul>
+			</nav>
+
+		</figure>
+
+		<figure class="figure-dark">
+			
+			<nav class="nav-primary-dark">
+				<ul>
+					<li><a href="">Item 1</a></li>
+					<li><a href="" class="current-dark">Item 2</a></li>
+					<li><a href="">Item 3</a></li>
+					<li><a href="">Item 5</a></li>
+				</ul>
+			</nav>
+
+		</figure>
+
+		<h3>Secondary Vertical</h3>
+
+		<figure>
+			
+			<nav class="nav-secondary-light">
+				<ul>
+					<li><a href="">Repairs</a></li>
+					<li><a href="">Building</a>
+    					<ul>
+    					<li><a href="" class="current-light">Wood</a></li>
+    					<li><a href="">Masonry</a></li>
+    					<li><a href="">Concrete</a></li>
+    					</ul>
+    				</li>
+    				<li><a href="">Arts and Crafts</a></li>
+				</ul>
+			</nav>
+
+		</figure>
+
+		<figure class="figure-dark">
+			
+			<nav class="nav-secondary-dark">
+				<ul>
+					<li><a href="">Repairs</a></li>
+					<li><a href="">Building</a>
+    					<ul>
+    					<li><a href="" class="current-dark">Wood</a></li>
+    					<li><a href="">Masonry</a></li>
+    					<li><a href="">Concrete</a></li>
+    					</ul>
+    				</li>
+    				<li><a href="">Arts and Crafts</a></li>
+				</ul>
+			</nav>
+
+		</figure>
+
+		<h2>Notifications</h2>
+
+		<h3>Error</h3>
+
+		<figure>
+			
+			<div class="notification-light notification-error">
+
+				<div class="notification-icon">
+
+					<img src="icons/error.svg" alt="Error icon">
+
+				</div>
+
+				<div class="notification-text">
+
+					<h6>Error</h6>
+
+					<p>Wrenches can't be used with nails.</p>
+
+				</div>
+
+			</div>
+
+		</figure>
+
+		<figure class="figure-dark">
+			
+			<div class="notification-dark notification-error">
+
+				<div class="notification-icon">
+
+					<img src="icons/error.svg" alt="Error icon">
+
+				</div>
+
+				<div class="notification-text">
+
+					<h6>Error</h6>
+
+					<p>Wrenches can't be used with nails.</p>
+
+				</div>
+
+			</div>
+
+		</figure>
+
+		<h3>Warning</h3>
+
+		<figure>
+			
+			<div class="notification-light notification-warning">
+
+				<div class="notification-icon">
+
+					<img src="icons/warning.svg" alt="Warning icon">
+
+				</div>
+
+				<div class="notification-text">
+
+					<h6>Warning</h6>
+
+					<p>The foundation isn't steady!</p>
+
+				</div>
+
+			</div>
+
+		</figure>
+
+		<figure class="figure-dark">
+			
+			<div class="notification-dark notification-warning">
+
+				<div class="notification-icon">
+
+					<img src="icons/warning.svg" alt="Warning icon">
+
+				</div>
+
+				<div class="notification-text">
+
+					<h6>Warning</h6>
+
+					<p>The foundation isn't steady!</p>
+
+				</div>
+
+			</div>
+
+		</figure>
+
+		<h3>Success</h3>
+
+		<figure>
+			
+			<div class="notification-light notification-success">
+
+				<div class="notification-icon">
+
+					<img src="icons/success.svg" alt="Success icon">
+
+				</div>
+
+				<div class="notification-text">
+
+					<h6>Success</h6>
+
+					<p>You built that bad boy. Go you!</p>
+
+				</div>
+
+			</div>
+
+		</figure>
+
+		<figure class="figure-dark">
+			
+			<div class="notification-dark notification-success">
+
+				<div class="notification-icon">
+
+					<img src="icons/success.svg" alt="Success icon">
+
+				</div>
+
+				<div class="notification-text">
+
+					<h6>Success</h6>
+
+					<p>You built that bad boy. Go you!</p>
+
+				</div>
+
+			</div>
+
+		</figure>
+
+		<h3>Neutral</h3>
+
+		<figure>
+			
+			<div class="notification-light notification-neutral">
+
+				<div class="notification-icon">
+
+					<img src="icons/neutral.svg" alt="Neutral icon">
+
+				</div>
+
+				<div class="notification-text">
+
+					<h6>Info</h6>
+
+					<p>The wood glue is dried and ready.</p>
+
+				</div>
+
+			</div>
+
+		</figure>
+
+		<figure class="figure-dark">
+			
+			<div class="notification-dark notification-neutral">
+
+				<div class="notification-icon">
+
+					<img src="icons/neutral.svg" alt="Neutral icon">
+
+				</div>
+
+				<div class="notification-text">
+
+					<h6>Info</h6>
+
+					<p>The wood glue is dried and ready.</p>
+
+				</div>
+
+			</div>
+
+		</figure>
+
+		<h2>Hero Component</h2>
+
+		<figure>
+			
+			<a href="hero-component.html"><img src="images/example-hero.jpg" alt="Hero component screenshot" class="hero-example"></a>
+
+		</figure>
+
+		<h2>Cards</h2>
+
+		<h3>Article/Post</h3>
+
+		<figure>
+
+			<div class="card-article-1">
+
+				<a href="">
+
+					<div class="card-article-img">
+
+						<img src="images/card-article-3.jpg" alt="Article image">
+
+					</div>
+
+					<div class="card-article-date">
+
+						<span class=card-article-day>10</span>
+						<span class=card-article-month>APR</span>
+
+					</div>
+
+					<div class="card-article-text">
+
+						<h3>20 Beautiful Beginner Carpentry Projects</h3>
+
+						<p>by <strong>Toolshed Blogs</strong> on 4/10/2019</p>
+
+						<p>Starting your own DIY projects can be intimidating, but we have great options for carpenters of all skills levels.</p>
+
+					</div>
+
+				</a>
+
+			</div>
+
+		</figure>
+
+		<figure>
+
+			<div class="card-article-2">
+
+				<a href="">
+
+					<div class="card-article-img">
+
+						<img src="images/card-article-2.jpg" alt="Article image">
+
+					</div>
+
+					<div class="card-article-date">
+
+						<span class=card-article-day>22</span>
+						<span class=card-article-month>JAN</span>
+
+					</div>
+
+					<div class="card-article-text">
+
+						<h3>You Voted: The Best #Toolshed Projects of 2018</h3>
+
+						<p>by <strong>Toolshed Blogs</strong> on 1/22/2019</p>
+
+						<p>We've looked at hundreds of entries across all social media for best projects built with Toolshed in 2018.</p>
+
+					</div>
+
+				</a>
+
+			</div>
+
+		</figure>
+
+		<h3>Person/Profile</h3>
+
+		<figure>
+
+			<div class="card-profile">
+
+				<div class="card-profile-img">
+
+					<img src="images/profile-img.jpg" alt="Chad profile picture">
+
+				</div>
+
+				<div class="card-profile-text">
+
+					<h6>Chad Chaddington</h6>
+
+					<p><strong>Sr. Tool Specialist</strong></p>
+
+					<p><a href="" class="link-light">chad.squared@toolshed.com</a></p>
+
+					<p><a href="" class="link-light">123.456.7890</a></p>
+
+				</div>
+
+				<div class="card-profile-icons">
+
+					<div class="icon-social icon-facebook">
+						
+						<a href=""><img src="icons/facebook.svg" alt="Facebook icon"></a>
+
+					</div>
+
+					<div class="icon-social icon-twitter">
+
+						<a href=""><img src="icons/twitter.svg" alt="Twitter icon"></a>
+
+					</div>
+
+					<div class="icon-social icon-instagram">
+
+						<a href=""><img src="icons/instagram.svg" alt="Instagram icon"></a>
+
+					</div>
+
+					<div class="icon-social icon-linkedin">
+
+						<a href=""><img src="icons/linkedin.svg" alt="LinkedIn icon"></a>
+
+					</div>
+
+				</div>
+
+			</div>
+			
+		</figure>
+
+		<h3>Call to Action</h3>
+
+		<figure>
+			
+			<div class="card-action-light">
+
+				<div class="card-action-img">
+
+					<img src="images/card-action-1.jpg" alt="Carpentry">
+
+				</div>
+
+				<div class="card-action-text">
+
+					<h5>DIY Is Cooler With Our Rewards Program</h5>
+
+					<p>Get the most out of Toolshed with our exclusive rewards program. 10% off every purchse, plus exclusive offers just for you.</p>
+
+					<a class="button button-tertiary button-black2gold" href="#">Join Now</a>
+
+				</div>
+
+			</div>
+			
+		</figure>
+
+		<figure class="figure-dark">
+			
+			<div class="card-action-dark">
+
+				<div class="card-action-img">
+
+					<img src="images/card-action-1.jpg" alt="Carpentry">
+
+				</div>
+
+				<div class="card-action-text">
+
+					<h5>DIY Is Cooler With Our Rewards Program</h5>
+
+					<p>Get the most out of Toolshed with our exclusive rewards program. 10% off every purchse, plus exclusive offers just for you.</p>
+
+					<a class="button button-tertiary button-white2gold" href="#">Join Now</a>
+
+				</div>
+
+			</div>
+			
+		</figure>
+
+	</main>
+
+	<footer>
+
+		<div class="footer-text">
+		
+			<p>&copy; 2019 Toolshed</p>
+
+			<p>Craft Design System was designed with love and care by Bianca Talabis.</p>
+
+			<p>Bianca is a UX/UI designer based in Austin, TX. She's a puppy connoiseur, UI enthusiast, and code tinker, in that order.</p>
+
+		</div>
+
+		<nav class="nav-primary-dark">
+		 	<ul>
+		 		<li><a href="https://www.google.com/">LinkedIn</a></li>
+		 		<li><a href="https://www.google.com/">Behanced</a></li>
+		 		<li><a href="https://www.google.com/">Instagram</a></li>
+		 	</ul>
+		</nav>
+
+	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+
+		const modal = document.querySelector('dialog');
+		const open = document.getElementById('open-modal');
+
+		open.addEventListener('click', () => {
+		modal.showModal();
+		});
+
+		modal.addEventListener('click', event => {
+		if (event.target === modal) {
+		modal.close('cancelled');
+		}
+		});
+
+		});
+	</script>
+
+</body>
+</html>
